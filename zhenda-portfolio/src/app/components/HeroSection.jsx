@@ -34,9 +34,6 @@ const HeroSection = () => {
                   I'm a Computer Science student at UCLA that thrives in solving challenging problems in a team environment, and creating quality systems that exceed user expectations. Currently, I'm learning about building exceptional digital experiences through web development, and looking for employment opportunities to demonstrate my skills and passion. 
               </p>
               <div>
-                <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-green-500 hover:from-blue-500 hover:to-yellow-500 text-white font-mono">
-                  Hire Me
-                </button>
                 <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-green-500 hover:from-blue-500 hover:to-yellow-500 text-white mt-3 font-mono'>
                   Download Resume
                 </button>
