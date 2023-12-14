@@ -1,5 +1,7 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
+import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
   return (
@@ -7,17 +9,35 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-12">
             <div className="col-span-7 place-self-center text-center sm:text-left">
               <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-                  <span className="text-[#64FFDA] text-base sm:text-1xl lg:text-2xl font-mono bg-clip-text">Hi, my name is </span> 
-                  Zhenda Hu. I'm a:
+                  <p className="text-[#64FFDA] text-base sm:text-1xl lg:text-2xl font-mono bg-clip-text">{"Hi, my name is "}</p> 
+                  Zhenda Hu.
               </h1>
-              <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                  bakldsjfaklsdjfaklsdjf
+              <h1 className="text-gray-50 mb-4 text-1xl sm:text-2xl lg:text-3xl font-mono">
+                <TypeAnimation
+                  sequence={[
+                    // Same substring at the start will only be typed out once, initially
+                    'Web Developer.',
+                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                    'Application Engineer.',
+                    1000,
+                    'Obsessive Learner.',
+                    1000,
+                    'Team Player.',
+                    1000
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                />
+              </h1>
+              <p className="text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base">
+                  I'm a Computer Science student at UCLA that thrives in solving challenging problems in a team environment, and creating quality systems that exceed user expectations. Currently, I'm learning about building exceptional digital experiences through web development, and looking for employment opportunities to demonstrate my skills and passion. 
               </p>
               <div>
-                <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-green-500 hover:from-blue-500 hover:to-yellow-500 text-white">
+                <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-green-500 hover:from-blue-500 hover:to-yellow-500 text-white font-mono">
                   Hire Me
                 </button>
-                <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-green-500 hover:from-blue-500 hover:to-yellow-500 text-white mt-3'>
+                <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-green-500 hover:from-blue-500 hover:to-yellow-500 text-white mt-3 font-mono'>
                   Download Resume
                 </button>
               </div>
