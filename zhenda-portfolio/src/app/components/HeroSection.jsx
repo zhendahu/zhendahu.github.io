@@ -15,9 +15,8 @@ const HeroSection = () => {
               <h1 className="text-gray-50 mb-4 text-1xl sm:text-2xl lg:text-3xl font-mono">
                 <TypeAnimation
                   sequence={[
-                    // Same substring at the start will only be typed out once, initially
                     'Web Developer.',
-                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                    1000, 
                     'Application Engineer.',
                     1000,
                     'Obsessive Learner.',
@@ -31,7 +30,7 @@ const HeroSection = () => {
                 />
               </h1>
               <p className="text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base">
-                  I'm a Computer Science student at UCLA that thrives in solving challenging problems in a team environment, and creating quality systems that exceed user expectations. Currently, I'm learning about building exceptional digital experiences through web development, and looking for employment opportunities to demonstrate my skills and passion. 
+                  I'm a Computer Science student at UCLA that thrives in solving challenging problems in a team environment, and creating quality systems that exceed user expectations. Currently, I'm learning about building <span className='text-[#64FFDA]'>exceptional digital experiences</span> through web development, and looking for employment opportunities to demonstrate my skills and passion. 
               </p>
               <div>
                 <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-green-500 hover:from-blue-500 hover:to-yellow-500 text-white mt-3 font-mono'>
@@ -40,7 +39,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-              <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
+              <div className='rounded-full bg-[#2f3b3d] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
                 <Image
                   src="/images/zhenda_memoji.png"
                   alt="hero image"
