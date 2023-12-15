@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section className='text-white'>
        <div className='md:grid md:grid-cols-2 gap-6 items-center py-8 px-2 xl:gap-6 sm:py-16 xl:px-16'>
-            <Image src="/images/zhenda_about.jpg" alt="about section image" className='ml-20' width={500} height={500} />
+            <Image src="/images/zhenda_about.jpg" alt="about section image" className='ml-20 mr-6 rounded-2xl' width={500} height={500} />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-3xl font-mono text-[#64FFDA] mb-4'>About Me</h2>
                 <p className='text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base'>
