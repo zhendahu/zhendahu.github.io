@@ -9,8 +9,9 @@ const AboutSection = () => {
                 <Image src="/images/zhenda_about.jpg" alt="about section image" className='' width={500} height={500} />
             </div>
             <div className='mt-4 md:mt-0 text-left  flex flex-col h-full'>
-                <h2 className='text-3xl font-mono text-[#64FFDA] mb-4'> <span className='text-white font-mono text-base'>01.</span> About Me</h2>
-                <p className='text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base'>
+                <h2 className='text-3xl font-mono text-[#64FFDA]'> <span className='text-white font-mono text-base'>01.</span> About Me</h2>
+                <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
+                <p className='text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-4 lg:text-base'>
                     Hey, thanks for stopping by! 
                     <br></br>
                     <br></br>
@@ -23,14 +24,16 @@ const AboutSection = () => {
                     Here are a few technologies I've been working with recently:
                     <br></br>
                     <br></br>
-                    <ul className='md:grid md:grid-cols-2 font-mono text-sm'>
-                        <li><span className='text-[#64FFDA]'>▹</span> Python</li>
-                        <li><span className='text-[#64FFDA]'>▹</span> C++</li>
-                        <li><span className='text-[#64FFDA]'>▹</span> Javascript</li>
-                        <li><span className='text-[#64FFDA]'>▹</span> Next.js</li>
-                        <li><span className='text-[#64FFDA]'>▹</span> PostgreSQL</li>
-                        <li><span className='text-[#64FFDA]'>▹</span> Django</li>
-                    </ul>
+                </p>
+                <ul className='text-[#ADB7BE] md:grid md:grid-cols-2 font-mono text-sm'>
+                    <li><span className='text-[#64FFDA]'>▹</span> Python</li>
+                    <li><span className='text-[#64FFDA]'>▹</span> C++</li>
+                    <li><span className='text-[#64FFDA]'>▹</span> Javascript</li>
+                    <li><span className='text-[#64FFDA]'>▹</span> Next.js</li>
+                    <li><span className='text-[#64FFDA]'>▹</span> PostgreSQL</li>
+                    <li><span className='text-[#64FFDA]'>▹</span> Django</li>
+                </ul>
+                <p className='text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base'>
                     <br></br>
                     <br></br>
                     Outside of work, my hobbies include drawing, brazilian jiu-jitsu, MMA, and video games. Onwards and upwards!
