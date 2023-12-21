@@ -14,7 +14,7 @@ export default function Home() {
       <container className="container mt-24 mx-auto px-12 ">
         <AboutSection />
       </container>
-      <container>
+      <container className="container mx-auto px-12">
         <ExperienceSection />
       </container>
     </main>

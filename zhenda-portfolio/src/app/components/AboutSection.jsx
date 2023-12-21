@@ -9,8 +9,8 @@ const AboutSection = () => {
                 <Image src="/images/zhenda_about.jpg" alt="about section image" className='' width={500} height={500} />
             </div>
             <div className='mt-4 md:mt-0 text-left  flex flex-col h-full'>
-                <h2 className='text-3xl font-mono text-[#64FFDA]'> <span className='text-white font-mono text-base'>01.</span> About Me</h2>
-                <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
+                <h2 className='text-3xl text-white font-bold'> <span className='font-mono text-[#64FFDA] text-base'>01.</span> About Me</h2>
+                <hr class="h-px my-4 bg-gray-200 dark:bg-gray-700" />
                 <p className='text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-4 lg:text-base'>
                     Hey, thanks for stopping by! 
                     <br></br>
