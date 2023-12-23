@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section className='text-white'>
        <div className='md:grid md:grid-cols-2 gap-6 items-center py-8 px-2 xl:gap-6 sm:py-16 xl:px-16'>
-            <div className='w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative rounded-2xl'>
+            <div className='w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative rounded-6xl'>
                 <Image src="/images/zhenda_about.jpg" alt="about section image" className='' width={500} height={500} />
             </div>
             <div className='mt-4 md:mt-0 text-left  flex flex-col h-full'>
