@@ -4,6 +4,9 @@ import { Navbar } from './components/Navbar'
 import AboutSection from './components/AboutSection'
 import ExperienceSection from './components/ExperienceSection'
 import EmailSection from './components/EmailSection'
+import GithubIcon from "../../public/github-icon.svg"
+import LinkedinIcon from "../../public/linkedin-icon.svg"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -21,6 +24,15 @@ export default function Home() {
       <container className="container mx-auto px-12">
         <EmailSection />
       </container>
+      <footer className='fixed bottom-0 left-0 z-20 p-4 flex flex-col gap-4'>
+        <Link href={"https://github.com/zhendahu"} target="_blank">
+            <Image src={GithubIcon} alt="Github Icon" />
+        </Link>
+        <Link href={"https://www.linkedin.com/in/zhendahu/"} target='_blank'>
+            <Image src={LinkedinIcon} alt="LinkedIn Icon" />
+        </Link>
+
+      </footer>
     </main>
   )
 }
