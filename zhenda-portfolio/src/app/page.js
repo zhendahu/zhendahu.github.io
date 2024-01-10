@@ -18,10 +18,10 @@ export default function Home() {
       <container className="container mt-24 mx-auto px-12 py-20">
         <AboutSection />
       </container>
-      <container className="container mx-auto px-12 py-20">
+      <container className="container mt-24 mx-auto px-12 py-20">
         <ExperienceSection />
       </container>
-      <container className="container mx-auto px-12 py-20">
+      <container className="container mt-24 mx-auto px-12 py-20">
         <EmailSection />
       </container>
       <footer className='fixed bottom-0 left-0 z-20 p-4 flex flex-col gap-4'>
