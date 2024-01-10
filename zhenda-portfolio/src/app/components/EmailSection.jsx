@@ -15,7 +15,7 @@ const EmailSection = () => {
     }
 
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative text-[#ADB7BE]'>
+    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative text-[#ADB7BE]' id="contact">
         <div className=''>
             <h2 className='text-3xl text-white font-bold py-2 xl:py-4'> <span className='font-mono text-[#64FFDA] text-base'>04.</span> Let's Connect</h2>
             <p className="text-[#ADB7BE] mb-4 max-w-md">

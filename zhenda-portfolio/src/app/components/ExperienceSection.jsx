@@ -73,7 +73,7 @@ const ExperienceSection = () => {
 
   return (
     <div>
-        <section className='mt-4 md:mt-0 text-left flex flex-col h-full px-2 items-center xl:px-16'>
+        <section className='mt-4 md:mt-0 text-left flex flex-col h-full px-2 items-center xl:px-16' id="experience">
             <h2 className='text-3xl text-white font-bold'> <span className='font-mono text-[#64FFDA] text-base'>02.</span> Work Experience</h2>
         </section>
         
