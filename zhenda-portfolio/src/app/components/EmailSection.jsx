@@ -10,23 +10,8 @@ const EmailSection = () => {
             subject: e.target.subject.value,
             message: e.target.message.value,
         }
-        const JSONdata = JSON.stringify(data)
-        const endpoint = "/api/send"
-
-        const options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSONdata,
-        }
-
-        const response = await fetch(endpoint, options)
-        const resData = await response.json()
-
-        if (response.status === 200) {
-            console.log('Message sent.')
-        }
+        
+        await sendContactForm(data)
     }
 
   return (
@@ -35,7 +20,7 @@ const EmailSection = () => {
             <h2 className='text-3xl text-white font-bold py-2 xl:py-4'> <span className='font-mono text-[#64FFDA] text-base'>04.</span> Let's Connect</h2>
             <p className="text-[#ADB7BE] mb-4 max-w-md">
                 {" "}
-                I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hello, feel free to drop a message and I'll do my best to get back to you!
+                Please feel free to reach out and shoot me an email! Regardless of whether you have a burning question, an open opportunity, or just want to drop in and say hi, my inbox is always open. I'll try my best to get back to you as soon as I can!
             </p>
         </div>
         <div>
