@@ -11,7 +11,12 @@ const EmailSection = () => {
             message: e.target.message.value,
         }
         
-        await sendContactForm(data)
+        try {
+            await sendEmail(formState)
+        }
+        catch (error) {
+            console.log(error)
+        }
     }
 
   return (
