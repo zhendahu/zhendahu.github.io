@@ -10,7 +10,7 @@ const AboutSection = () => {
             </div>
             <div className='mt-4 md:mt-0 text-left  flex flex-col h-full'>
                 <h2 className='text-3xl text-white font-bold'> <span className='font-mono text-[#64FFDA] text-base'>01.</span> About Me</h2>
-                <hr class="h-px my-4 bg-gray-200 dark:bg-gray-700" />
+                <hr className="h-px my-4 bg-gray-200 dark:bg-gray-700" />
                 <p className='text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-4 lg:text-base'>
                     Hey, thanks for stopping by! 
                     <br></br>

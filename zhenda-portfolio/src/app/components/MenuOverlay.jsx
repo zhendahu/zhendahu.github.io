@@ -1,5 +1,5 @@
 import React from 'react'
-import NavLink from './Navlink'
+import NavLink from './NavBarLink'
 
 const MenuOverlay = ({ links }) => {
   return (

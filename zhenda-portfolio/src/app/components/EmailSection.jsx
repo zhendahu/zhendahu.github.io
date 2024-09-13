@@ -4,6 +4,9 @@ import React from 'react'
 const EmailSection = () => {
 
     const handleSubmit = async (e) => {
+
+        console.log("Hello")
+
         e.preventDefault();
         const data = {
             email: e.target.email.value,
@@ -11,12 +14,28 @@ const EmailSection = () => {
             message: e.target.message.value,
         }
         
-        try {
-            await sendEmail(formState)
+        console.log(data.email)
+        console.log(data.subject)
+        console.log(data.message)
+
+        const JSONdata = JSON.stringify(data);
+        const endpoint = '/api/send'
+        const options = {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSONdata,
         }
-        catch (error) {
-            console.log(error)
+
+        const response = await fetch(endpoint, options)
+        console.log(response)
+        const resData = await response.json()
+        if (resData.status === 200) {
+            console.log('Message sent.')
         }
+
+        
     }
 
   return (

@@ -78,7 +78,7 @@ const ExperienceSection = () => {
         </section>
         
         <div className='items-center flex flex-col'>
-            <hr class="h-px my-4 bg-gray-200 dark:bg-gray-700 w-1/2" />
+            <hr className="h-px my-4 bg-gray-200 dark:bg-gray-700 w-1/2" />
         </div>
         <section className='md:grid md:grid-cols-2 gap-2 items-center py-4 px-2 xl:gap-2 sm:py-8 xl:px-16'>
             <div className='flex flex-col gap-4 xl:gap-6'>

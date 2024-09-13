@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React, { useState } from 'react'
-import NavLink from './NavLink'
+import NavBarLink from './NavBarLink'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 import MenuOverlay from './MenuOverlay'
 
@@ -51,7 +51,7 @@ export const Navbar = () => {
                     {
                         navLinks.map((link, index) => (
                             <li key={index}>
-                                <NavLink href={link.path} title={link.title} />
+                                <NavBarLink href={link.path} title={link.title} />
                             </li>
                         ))
                     }
