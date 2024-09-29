@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection'
 import { Navbar } from './components/Navbar'
 import AboutSection from './components/AboutSection'
 import ExperienceSection from './components/ExperienceSection'
+import ProjectSection from './components/ProjectSection'
 import EmailSection from './components/EmailSection'
 import GithubIcon from "../../public/github-icon.svg"
 import LinkedinIcon from "../../public/linkedin-icon.svg"
@@ -20,6 +21,9 @@ export default function Home() {
       </container>
       <container className="container mt-28 mx-auto px-12 py-20">
         <ExperienceSection />
+      </container >
+      <container className="container mt-28 mx-auto px-12 py-20">
+        <ProjectSection />
       </container>
       <container className="container mt-28 mx-auto px-12 py-20">
         <EmailSection />

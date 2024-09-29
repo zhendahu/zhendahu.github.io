@@ -7,6 +7,10 @@ import MenuOverlay from './MenuOverlay'
 
 const navLinks = [
     {
+        title: "00. Home",
+        path: "#home",
+    },
+    {
         title: "01. About",
         path:"#about",
     },
@@ -30,9 +34,7 @@ export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#152342] bg-opacity-90">
         <div className="flex flex-wrap items-center justify-between mx-auto py-3 px-6">
-            <Link href={"/"} className="text-md md:text-3xl text-white font-semibold">
-                LOGO
-            </Link> 
+            <div></div>
             <div className='mobile-menu block md:hidden'>
                 {
                     !navbarOpen ? (

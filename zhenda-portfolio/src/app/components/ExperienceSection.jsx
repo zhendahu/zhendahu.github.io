@@ -5,6 +5,24 @@ import TabButton from './TabButton'
 
 const TAB_DATA = [
     {
+        title: "aws",
+        id: "aws",
+        content: (
+            <p>
+                <span className='text-md font-mono text-[#64FFDA]'> Software Development Engineer (Embedded) Intern</span>
+                <br></br>
+                <br></br>
+                <span className='text-[#64FFDA]'>▹</span> Part of the AWS EC2 Blackfoot Peering team, responsible for handling all direct connect (DX), peering, and Site-to-Site VPN connections to EC2.
+                <br></br>
+                <br></br>
+                <span className='text-[#64FFDA]'>▹</span> Designed and built an event store for EC2 network address translation (NAT) devices using AWS EventBridge, Lambda, CloudWatch, SNS, and SQS. 
+                <br></br>
+                <br></br>
+                <span className='text-[#64FFDA]'>▹</span> Reduced average time taken for operators to diagnose and repair device failures by 25% by creating an aggregate queryable event dashboard and single-pane event history.
+            </p>
+        )
+    },
+    {
         title: "ucla",
         id: "ucla",
         content: (
@@ -82,6 +100,7 @@ const ExperienceSection = () => {
         </div>
         <section className='md:grid md:grid-cols-2 gap-2 items-center py-4 px-2 xl:gap-2 sm:py-8 xl:px-16'>
             <div className='flex flex-col gap-4 xl:gap-6'>
+                <TabButton selectTab={() => handleTabChange("aws")} active={tab === "aws"}>AWS</TabButton>
                 <TabButton selectTab={() => handleTabChange("ucla")} active={tab === "ucla"}>UCLA</TabButton>
                 <TabButton selectTab={() => handleTabChange("reffie")} active={tab === "reffie"}>Reffie</TabButton>
                 <TabButton selectTab={() => handleTabChange("mksemi")} active={tab === "mksemi"}>MKSemi</TabButton>
