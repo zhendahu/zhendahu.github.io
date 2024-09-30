@@ -25,9 +25,6 @@ export default function Home() {
       <container className="container mt-28 mx-auto px-12 py-20">
         <ProjectSection />
       </container>
-      <container className="container mt-28 mx-auto px-12 py-20">
-        <EmailSection />
-      </container>
       <footer className='fixed bottom-0 left-0 z-20 p-4 flex flex-col gap-4'>
         <Link href={"https://github.com/zhendahu"} target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />

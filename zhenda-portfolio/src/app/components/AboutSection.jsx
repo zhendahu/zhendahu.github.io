@@ -9,7 +9,7 @@ const AboutSection = () => {
                 <Image src="/images/zhenda_about.jpg" alt="about section image" className='' width={500} height={500} />
             </div>
             <div className='mt-4 md:mt-0 text-left  flex flex-col h-full'>
-                <h2 className='text-3xl text-white font-bold'> <span className='font-mono text-[#64FFDA] text-base'>01.</span> About Me</h2>
+                <h2 className='text-3xl md:text-5xl text-white font-bold'> <span className='font-mono text-[#64FFDA] text-base'>01.</span> About Me</h2>
                 <hr className="h-px my-4 bg-gray-200 dark:bg-gray-700" />
                 <p className='text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-4 lg:text-base'>
                     Hey, thanks for stopping by! 
@@ -27,11 +27,11 @@ const AboutSection = () => {
                 </p>
                 <ul className='text-[#ADB7BE] md:grid md:grid-cols-2 font-mono text-sm'>
                     <li><span className='text-[#64FFDA]'>▹</span> Python</li>
-                    <li><span className='text-[#64FFDA]'>▹</span> C++</li>
+                    <li><span className='text-[#64FFDA]'>▹</span> AWS</li>
                     <li><span className='text-[#64FFDA]'>▹</span> Javascript</li>
                     <li><span className='text-[#64FFDA]'>▹</span> Next.js</li>
                     <li><span className='text-[#64FFDA]'>▹</span> PostgreSQL</li>
-                    <li><span className='text-[#64FFDA]'>▹</span> Django</li>
+                    <li><span className='text-[#64FFDA]'>▹</span> C++</li>
                 </ul>
                 <p className='text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base'>
                     <br></br>

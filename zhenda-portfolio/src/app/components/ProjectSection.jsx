@@ -41,7 +41,7 @@ const TAB_DATA = [
         year: "2023",
         results: [
             { title: "Developed an AI agent to play Flappy Bird using the NEAT algorithm, showcasing practical experience with evolutionary algorithms and neural networks." },
-            { title: "Achieed significant performance improvements in the AI agent's gameplay, demonstrating the efficacy of NEAT in training complex behaviors through evolutionary strategies." },
+            { title: "Achieved significant performance improvements in the AI agent's gameplay, demonstrating the efficacy of NEAT in training complex behaviors through evolutionary strategies." },
         ],
         link: "https://github.com/zhendahu/flappy-bird-AI",
         image: flappy_bird,
@@ -50,19 +50,19 @@ const TAB_DATA = [
 
 const ProjectSection = () => {
    return(
-    <section className='pb-16'>
+    <section className='pb-16' id='projects'>
         <div>
             <div className="container">
                 <div className='flex justify-center'>
-                    <p className='uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent'>Real-world Results</p>
+                    <p className='uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent'>Personal explorations</p>
                 </div>
                 <div className='flex justify-center'>
-                    <h2 className='text-3xl text-white font-bold mt-6'> <span className='font-mono text-[#64FFDA] text-base'>03.</span> Featured Projects</h2>
+                    <h2 className='text-3xl md:text-5xl text-white font-bold mt-6'> <span className='font-mono text-[#64FFDA] text-base'>03.</span> Featured Projects</h2>
                 </div>
 
-                <div className='flex flex-col mt-10 gap-20 justify-center'>
+                <div className='flex flex-col mt-10 md:mt-20 gap-20 justify-center'>
                     {TAB_DATA.map(project => (
-                        <div key={project.title} className="bg-[#202b43] rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 pl-8 pr-8 pt-8 text-white">
+                        <div key={project.title} className="bg-[#202b43] rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 text-white after:pointer-events-none">
                             <div className='flex'>
                                 <div className='bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
                                     <span>{project.company}</span>
@@ -70,23 +70,25 @@ const ProjectSection = () => {
                                     <span>{project.year}</span>
                                 </div>
                             </div>
-                            <h3 className='font-mono text-2xl mt-2'>{project.title}</h3>
-                            <hr className='border-t-2 border-white/5 mt-4'></hr>
+                            <h3 className='font-mono text-2xl mt-2 md:text-4xl md:mt-5'>{project.title}</h3>
+                            <hr className='border-t-2 border-white/5 mt-4 md:mt-5'></hr>
                             <hr />
-                            <ul className='flex flex-col gap-4 mt-4'>
+                            <ul className='flex flex-col gap-4 mt-4 md:mt-5'>
                                 {project.results.map(result => (
-                                    <li className='flex gap-2 text-sm'>
-                                        <span className='text-[#64FFDA]'>▹</span> <span>{result.title}</span>
+                                    <li className='flex gap-2 text-sm md:text-base'>
+                                        <span className='text-[#64FFDA]'>▹</span> <span className='text-[#ADB7BE]'>{result.title}</span>
                                     </li>
                                 ))}
                             </ul>
                             <a href={project.link}>
-                                <button className='bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8'> 
+                                <button className='bg-white text-gray-950 h-12 w-full md:max-w-lg rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 bg-gradient-to-br hover:from-gray-200 hover:to-gray-500'> 
                                     <span>View Project</span>
-                                    <arrowupright></arrowupright>
+                                    <Image src={arrowupright} className='h-5 w-5'></Image>
                                 </button>
                             </a>
-                            <Image src={project.image} alt={project.title} className='mt-8 -mb-4'/>
+                            <div className='flex justify-center items-center'>
+                                <Image src={project.image} alt={project.title} className='mt-8 -mb-4 md:-mb-0'/>
+                            </div>
                         </div>
                     ))}
                 </div>

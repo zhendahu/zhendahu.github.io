@@ -15,7 +15,7 @@ const HeroSection = () => {
               <h1 className="text-gray-50 mb-4 text-1xl sm:text-2xl lg:text-3xl font-mono">
                 <TypeAnimation
                   sequence={[
-                    'Creative thinker.',
+                    'Creative Thinker.',
                     1000, 
                     'Problem Solver.',
                     1000,
@@ -30,13 +30,11 @@ const HeroSection = () => {
                 />
               </h1>
               <p className="text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base">
-                  I'm a Computer Science student at UCLA that thrives in solving challenging problems in a team environment, and creating quality systems that exceed user expectations. Currently, I'm learning about building <span className='text-[#64FFDA]'>exceptional digital experiences</span> through web development, and looking for employment opportunities to demonstrate my skills and passion. 
+                  I'm a Computer Science student at UCLA that thrives in solving challenging problems in a team environment, and creating quality systems that exceed user expectations.
               </p>
-              <div>
-                <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-green-500 hover:from-blue-500 hover:to-yellow-500 text-white mt-3 font-mono'>
-                  Download Resume
-                </button>
-              </div>
+              <p className="text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base">
+              Please feel free to reach out and shoot me an email at <span className='text-[#64FFDA]'>zhendahu@gmail.com</span>! Regardless of whether you have a burning question, an open opportunity, or just want to drop in and say hi, my inbox is always open. I'll try my best to get back to you as soon as I can!
+              </p>
             </div>
             <div className="col-span-5 place-self-center mt-4 lg:mt-0">
               <div className='rounded-full bg-[#2f3b3d] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
