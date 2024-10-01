@@ -75,7 +75,7 @@ const ProjectSection = () => {
                             <hr />
                             <ul className='flex flex-col gap-4 mt-4 md:mt-5'>
                                 {project.results.map(result => (
-                                    <li className='flex gap-2 text-sm md:text-base'>
+                                    <li key={result.title} className='flex gap-2 text-sm md:text-base'>
                                         <span className='text-[#64FFDA]'>▹</span> <span className='text-[#ADB7BE]'>{result.title}</span>
                                     </li>
                                 ))}
@@ -83,7 +83,7 @@ const ProjectSection = () => {
                             <a href={project.link}>
                                 <button className='bg-white text-gray-950 h-12 w-full md:max-w-lg rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 bg-gradient-to-br hover:from-gray-200 hover:to-gray-500'> 
                                     <span>View Project</span>
-                                    <Image src={arrowupright} className='h-5 w-5'></Image>
+                                    <Image src={arrowupright} alt='arrowupright' className='h-5 w-5'></Image>
                                 </button>
                             </a>
                             <div className='flex justify-center items-center'>

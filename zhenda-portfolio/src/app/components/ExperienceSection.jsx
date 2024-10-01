@@ -26,7 +26,7 @@ const TAB_DATA = [
                     <br></br>
                     <span className='text-[#64FFDA]'>▹</span> Reduced average time taken for operators to diagnose and repair device failures by 25% by creating an aggregate queryable event dashboard and single-pane event history.
                 </p>
-                <Image src={aws} className='mt-8'></Image>
+                <Image src={aws} alt='aws logo' className='mt-8'></Image>
             </div>
             
         )
@@ -43,10 +43,10 @@ const TAB_DATA = [
                     <span className='text-[#64FFDA]'>▹</span> Re-constituted EGG signal processing C++ script from DLL to standalone windows EXE.
                     <br></br>
                     <br></br>
-                    <span className='text-[#64FFDA]'>▹</span> Engineered and developed intuitive, streamlined, and user-friendly UI to adjust 9 different parameters of the EGG signal processing script as well as redirect input/output between compiled C++ executable and Python script using Python's subprocess module.
+                    <span className='text-[#64FFDA]'>▹</span> Engineered and developed intuitive, streamlined, and user-friendly UI to adjust 9 different parameters of the EGG signal processing script as well as redirect input/output between compiled C++ executable and Python script using Python&apos;s subprocess module.
                 </p>
                 <div className='flex justify-center items-center'> 
-                    <Image src={ucla} className='mt-8 w-1/2 h-1/2'></Image> 
+                    <Image src={ucla} alt='ucla logo' className='mt-8 w-1/2 h-1/2'></Image> 
                 </div>
             </div>
         )
@@ -69,7 +69,7 @@ const TAB_DATA = [
                     <span className='text-[#64FFDA]'>▹</span> Led weekly sprint planning meetings and performed code reviews for team of 4 junior interns.
                 </p>
                 <div className='flex justify-center items-center'>
-                    <Image src={reffie} className='mt-8'></Image>
+                    <Image src={reffie} alt='reffie logo' className='mt-8'></Image>
                 </div>
                 
             </div>
@@ -96,7 +96,7 @@ const TAB_DATA = [
                     <span className='text-[#64FFDA]'>▹</span> Designed and maintained SQLite database for internal debugging data outputted by UWB chip.
                 </p>
                 <div className='flex justify-center items-center'>
-                    <Image src={mksemi} className='flex justify-center items-center mt-8'></Image>
+                    <Image src={mksemi} alt='mksemi logo' className='flex justify-center items-center mt-8'></Image>
                 </div>
                 
             </div>
@@ -118,7 +118,7 @@ const ExperienceSection = () => {
   return (
     <div className='py-8 sm:py-16' id="experience">
         <div className='flex justify-center'>
-                    <p className='uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent'>Where I've Worked</p>
+                    <p className='uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent'>Where I&apos;ve Worked</p>
         </div>
         <section className='mt-6 text-left flex flex-col h-full px-2 items-center xl:px-16'>
             <h2 className='text-3xl md:text-5xl text-white font-bold'> <span className='font-mono text-[#64FFDA] text-base'>02.</span> Work Experience</h2>

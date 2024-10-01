@@ -30,10 +30,10 @@ const HeroSection = () => {
                 />
               </h1>
               <p className="text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base">
-                  I'm a Computer Science student at UCLA that thrives in solving challenging problems in a team environment, and creating quality systems that exceed user expectations.
+                  I&apos;m a Computer Science student at UCLA that thrives in solving challenging problems in a team environment, and creating quality systems that exceed user expectations.
               </p>
               <p className="text-[#ADB7BE] text-xs sm:text-sm mr-6 mb-6 lg:text-base">
-              Please feel free to reach out and shoot me an email at <span className='text-[#64FFDA]'>zhendahu@gmail.com</span>! Regardless of whether you have a burning question, an open opportunity, or just want to drop in and say hi, my inbox is always open. I'll try my best to get back to you as soon as I can!
+              Please feel free to reach out and shoot me an email at <span className='text-[#64FFDA]'>zhendahu@gmail.com</span>! Regardless of whether you have a burning question, an open opportunity, or just want to drop in and say hi, my inbox is always open. I&apos;ll try my best to get back to you as soon as I can!
               </p>
             </div>
             <div className="col-span-5 place-self-center mt-4 lg:mt-0">

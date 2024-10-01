@@ -4,7 +4,6 @@ import { Navbar } from './components/Navbar'
 import AboutSection from './components/AboutSection'
 import ExperienceSection from './components/ExperienceSection'
 import ProjectSection from './components/ProjectSection'
-import EmailSection from './components/EmailSection'
 import GithubIcon from "../../public/github-icon.svg"
 import LinkedinIcon from "../../public/linkedin-icon.svg"
 import Link from "next/link"
