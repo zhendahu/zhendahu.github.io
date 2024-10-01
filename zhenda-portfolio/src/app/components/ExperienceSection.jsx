@@ -117,7 +117,7 @@ const ExperienceSection = () => {
 
   return (
     <div className='py-8 sm:py-16' id="experience">
-        <div className='flex justify-center'>
+        <div className='flex justify-center items-center'>
                     <p className='uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent'>Where I&apos;ve Worked</p>
         </div>
         <section className='mt-6 text-left flex flex-col h-full px-2 items-center xl:px-16'>
@@ -128,16 +128,13 @@ const ExperienceSection = () => {
             <hr className="h-px my-4 bg-gray-200 dark:bg-gray-700 w-1/2" />
         </div>
         <section className='md:grid md:grid-cols-2 gap-2 items-center py-4 px-2 xl:gap-2 sm:py-8 xl:px-16'>
-            <div className='flex flex-col gap-4 xl:gap-6'>
+            <div className='flex flex-col gap-6 xl:gap-10'>
                 <TabButton selectTab={() => handleTabChange("aws")} active={tab === "aws"}>AWS</TabButton>
                 <TabButton selectTab={() => handleTabChange("ucla")} active={tab === "ucla"}>UCLA</TabButton>
                 <TabButton selectTab={() => handleTabChange("reffie")} active={tab === "reffie"}>Reffie</TabButton>
                 <TabButton selectTab={() => handleTabChange("mksemi")} active={tab === "mksemi"}>MKSemi</TabButton>
             </div>
-            <div className='text-[#ADB7BE]'>{TAB_DATA.find((t) => t.id === tab).content}</div>
-            {/* <div className='flex justify-center items-center'>
-                <Image src={TAB_DATA.find((t) => t.id === tab).image}></Image>
-            </div> */}
+            <div className='text-[#ADB7BE] mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
         </section>
     </div>
 

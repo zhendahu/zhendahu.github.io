@@ -80,7 +80,7 @@ const ProjectSection = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <a href={project.link}>
+                            <a href={project.link} target='_blank'>
                                 <button className='bg-white text-gray-950 h-12 w-full md:max-w-lg rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 bg-gradient-to-br hover:from-gray-200 hover:to-gray-500'> 
                                     <span>View Project</span>
                                     <Image src={arrowupright} alt='arrowupright' className='h-5 w-5'></Image>
