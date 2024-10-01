@@ -60,6 +60,10 @@ const ProjectSection = () => {
                     <h2 className='text-3xl md:text-5xl text-white font-bold mt-6'> <span className='font-mono text-[#64FFDA] text-base'>03.</span> Featured Projects</h2>
                 </div>
 
+                <div className='items-center flex flex-col'>
+                    <hr className="h-px my-4 bg-gray-200 dark:bg-gray-700 w-1/2" />
+                </div>
+
                 <div className='flex flex-col mt-10 md:mt-20 gap-20 justify-center'>
                     {TAB_DATA.map(project => (
                         <div key={project.title} className="bg-[#202b43] rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 text-white after:pointer-events-none">
